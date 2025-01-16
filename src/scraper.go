@@ -9,6 +9,7 @@ import (
 func main() {
 	fmt.Println("Hello world")
 	c := colly.NewCollector()
+	fmt.Println("show pipeline")
 	const latitude = "43.35689"
 	const longitude = "-3.0"
 	c.Visit("https://es.wallapop.com/app/search?filters_source=category_navigation&latitude=" + latitude + "&" + "longitude=" + longitude)
